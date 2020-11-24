@@ -1,0 +1,99 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #1a1a1a;
+}
+
+/*##### Header ######*/
+header{
+    background-color: black;
+    width: 80%;
+    height: 8vh;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+h1{
+    color: white;
+}
+
+/* ####### Navigation ###### */
+nav{
+    background-color: #4b4b4b;
+    width: 80%;
+    height: 6vh;
+    padding: 10px 0;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: center;
+}
+
+nav a{
+    color: white;
+    margin: 0 20px;
+}
+
+.container{
+    background-color: #4b4b4b;
+    width: 80%;
+    margin: 0 auto;
+
+    display: flex;
+
+}
+
+/* #### Aside #### */
+aside{
+    width: 15%;
+    height: 85vh;
+    background-color: white;
+
+    display: flex;
+    flex-direction: column;
+}
+
+aside a{
+    color: black;
+    margin: 10px 20px;
+
+}
+
+/* ##### Main ####### */
+.container-box{
+    width: 65%;
+    height: 85vh;
+    margin-left: 20px;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container-box .box{
+    width: 160px;
+    height: 90px;
+    margin: 10px;
+
+    background: url(./images/thumbnail.jpg);
+
+    position: relative;
+}
+
+.container-box .box::after{
+    content: "Some Movie Title";
+    background-color: #1a1a1a;
+    color: white;
+    position: absolute;
+    bottom: -19px;
+    padding: 0 11.4px;
+}
+
+
+
+
